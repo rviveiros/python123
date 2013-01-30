@@ -1,5 +1,7 @@
+import string
 
-def stripChars(s, chars):
-    return s.translate(None, chars)
+def replace(s, chars):
+    print(s, type(s))
+    return s.replace(chars, "")
 
-print stripChars("hello world", "o")
+print(replace("hello world", "o"))
